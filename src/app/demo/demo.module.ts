@@ -6,14 +6,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { TestComponent } from './test.component';
+import { DemoComponent } from './demo.component';
 import { RouterModule, Routes } from '@angular/router';
 import { NgxBootstrapComponent } from './ngx-bootstrap/ngx-bootstrap.component';
 
-//import { routing } from './test_routes';
 
 const routes: Routes = [
-  { path: '', component : TestComponent},
+  { path: '', component : DemoComponent},
   { path: 'ngx-bootstrap', component : NgxBootstrapComponent},
 ]
 
@@ -23,7 +22,6 @@ const routes: Routes = [
  //   routing
     RouterModule.forChild(routes)
   ],
-  declarations: [TestComponent, NgxBootstrapComponent],
-//  exports: [TestComponent],
+  declarations: [DemoComponent, NgxBootstrapComponent],
 })
-export class TestModule { }
+export class DemoModule { }

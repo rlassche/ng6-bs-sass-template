@@ -2,17 +2,26 @@
 
 ## Contents of this template
 * ngx-bootstrap with sass
+
 See demo `ngx-bootstrap`
 
 * Mediawiki integration
+
 See demo `wiki`
+
+## Configuring the demo
+* Wiki
+
+Check `README.md` file in the wiki module.
 
 ## Development server
 
 * SSL
+
 Demo certificates available in `ssl`
 
 * Proxy
+
 Access the external mediawiki server through the Angluar proxy.
 `proxy.conf.json`
 

@@ -19,7 +19,7 @@ export class WikiComponent implements OnInit, OnDestroy {
   @Input( 'debug' )
   debug:boolean = true;
 
-  renderedArticle:string = 'leeg'
+  renderedArticle:string = ''
   message: any;
   subscription: Subscription;
 

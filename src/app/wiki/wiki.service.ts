@@ -25,7 +25,7 @@ export class WikiService {
     return this.subject.asObservable();
   }
   renderWikiArticle( article:string) {
-    console.log( "DemoService.renderWikiArticle: " + article)
+    console.log( "WikiService.renderWikiArticle: " + article)
     return this.http.get( "https://hp-probook/w/" + article, { responseType: 'text'})
 
 }

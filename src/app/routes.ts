@@ -1,10 +1,11 @@
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
-import { DemoModule } from './demo/demo.module';
 import { NocontentComponent } from './nocontent/nocontent.component';
-export const routes: Routes = [
-    { path: 'demo',        loadChildren: './demo/demo.module#DemoModule'   },
-    { path: 'ngx-bootstrap',        loadChildren: './demo/demo.module#DemoModule'   },
+import { NgxBootstrapComponent } from './demo/ngx-bootstrap/ngx-bootstrap.component'
+import { WikiComponent } from './demo/wiki/wiki.component';
 
+export const routes: Routes = [
+    { path: 'ngx-bootstrap',        component: NgxBootstrapComponent   },
+    { path: 'wiki',        component: WikiComponent },
     { path: '**',      component: NocontentComponent   }
 ];

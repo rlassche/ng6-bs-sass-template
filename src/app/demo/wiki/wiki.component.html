@@ -1,8 +1,7 @@
-<h1>Wiki demo</h1>
+<h1>WIKI demo</h1>
 
-<h2>Render Article</h2>
-<!--<input  [(ngModel)]="article" placeholder="Artitle" #article> -->
+<input  [(ngModel)]="art" placeholder="Mediawiki article" #article>
+<button (click)="getWikiPage()">Get WIKI page</button>
 
-<input  [(ngModel)]="wiki_article" placeholder="Article" #article>
-<button (click)="renderArticle()">Render</button>
-<div (click)="articleClick($event)" [innerHTML]="renderedArticle"></div>
+<!-- The rendered wiki page-->
+<media-wiki [article]="art" [debug]=true ></media-wiki>

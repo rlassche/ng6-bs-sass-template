@@ -29,8 +29,8 @@ const routes: Routes = [
     HttpClientModule
   ],
   declarations: [DemoComponent, NgxBootstrapComponent, WikiComponent],
-  exports:      [DemoComponent, NgxBootstrapComponent, WikiComponent,
-            CommonModule, FormsModule, HttpClientModule],
-  providers: [DemoService]
+  providers: [DemoService],
+  exports:      [DemoComponent, NgxBootstrapComponent, WikiComponent
+                ]
 })
 export class DemoModule { }

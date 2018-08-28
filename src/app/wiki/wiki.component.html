@@ -1,0 +1,9 @@
+<pre *ngIf="debug">
+wiki.component.html - DEBUG mode.
+=================================
+
+Mediawiki article: {{article}}
+Mediawiki message: {{message|json}}
+</pre>
+<div [innerHTML]="theWikiPage"></div>
+<div (click)="articleClick($event)" [innerHTML]="renderedArticle"></div>

@@ -25,8 +25,12 @@
 
 <h1>Router in app.component</h1>
 <h2>{{title}}</h2>
-<a routerLink="/demo">DEMO </a>
+<!--<a routerLink="/demo">DEMO </a>-->
 
-<router-outlet></router-outlet>
+<!-- <credit-card></credit-card> -->
+<input  [(ngModel)]="art" placeholder="Mediawiki article" #article>
+<button (click)="getWikiPage()">Get WIKI page</button>
+<media-wiki [article]="art" [debug]=true ></media-wiki>
+<!-- <router-outlet></router-outlet> -->
 
 <!-- <app-messages></app-messages> -->

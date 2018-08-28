@@ -6,7 +6,9 @@ import { AppRoutingModule } from './app-routing.module';
 
 //import { RouterModule} from '@angular/router';
 import { routes} from './routes';
-import { DemoModule } from './demo/demo.module'
+//import { DemoModule } from './demo/demo.module'
+
+import { WikiModule } from './wiki/wiki.module'
 
 
 import { AppComponent } from './app.component';
@@ -15,10 +17,10 @@ import { NocontentComponent } from './nocontent/nocontent.component';
 @NgModule({
   declarations: [
     AppComponent,
-    NocontentComponent
+    NocontentComponent,
   ],
   imports: [
-    BrowserModule, AppRoutingModule, FormsModule, DemoModule
+    BrowserModule, AppRoutingModule, FormsModule, WikiModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

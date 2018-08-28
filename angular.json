@@ -50,7 +50,10 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ng6-template:build"
+            "browserTarget": "ng6-template:build",
+            "ssl": true,
+            "sslKey": "ssl/hp-probook.key.pem",
+            "sslCert": "ssl/hp-probook.cert.pem"
           },
           "configurations": {
             "production": {

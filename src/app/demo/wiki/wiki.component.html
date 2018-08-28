@@ -1,0 +1,8 @@
+<h1>Wiki demo</h1>
+
+<h2>Render Article</h2>
+<!--<input  [(ngModel)]="article" placeholder="Artitle" #article> -->
+
+<input  [(ngModel)]="wiki_article" placeholder="Article" #article>
+<button (click)="renderArticle()">Render</button>
+<div (click)="articleClick($event)" [innerHTML]="renderedArticle"></div>

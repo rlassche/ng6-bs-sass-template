@@ -1,10 +1,10 @@
 import { DemoModule } from './demo.module';
 
 describe('DemoModule', () => {
-  let testModule: DemoModule;
+  let demoModule: DemoModule;
 
   beforeEach(() => {
-    testModule = new DemoModule();
+    demoModule = new DemoModule();
   });
 
   it('should create an instance', () => {

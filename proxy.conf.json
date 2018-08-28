@@ -1,0 +1,11 @@
+{
+  "/mediawiki/*": {
+    "target": "http://hp-probook",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/mediawiki": "http://hp-probook/mediawiki"
+    }
+  }
+}

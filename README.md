@@ -25,3 +25,40 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## WIKI math
+
+During the Math rendering, an inline code is displayed which should be suppressed.
+
+CSS class `mwe-math-mathtml-inline` is found in Math rendering. That definition does not exist in Angular. 
+
+Add the class in file `styles\main.sccs`
+
+```
+.mwe-math-mathml-inline {
+    /* display: inline !important; */ /* stylelint-disable-line declaration-no-important */
+    /* My override !! */
+    display: none; 
+}
+```
+
+
+### Proxy
+
+The `mediawiki` server is running seperatly from the Angular development environment. 
+
+The proxy is in `proxy.conf.json`
+
+```
+{
+  "/mediawiki/*": {
+    "target": "http://hp-probook",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/mediawiki": "http://hp-probook/mediawiki"
+    }
+  }
+}
+```

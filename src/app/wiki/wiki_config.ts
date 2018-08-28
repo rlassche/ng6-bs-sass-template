@@ -1,0 +1,1 @@
+export const WGARTICLEPATH:string =  "https://hp-probook/w/"

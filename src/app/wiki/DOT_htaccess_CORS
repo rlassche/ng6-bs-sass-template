@@ -1,0 +1,11 @@
+# Enable CORS
+# apache module headers is required.
+Header always set MyHeader "Rob"
+Header always set Access-Control-Allow-Methods: "GET,POST,OPTIONS,DELETE,PUT"
+Header always set Access-Control-Allow-Origin "*"
+Header always set Access-Control-Origin "*"
+Header always set Access-Control-Expose-Headers "Access-Control-Origin"
+Header always set Access-Control-Allow-Headers "x-requested-with, Origin, Content-Type, X-Auth-Token, authorization, accept"
+
+#RewriteCond %{SERVER_PORT} ^4200$
+#RewriteRule (.*) https://hp-probook/$1 [R=301,L]

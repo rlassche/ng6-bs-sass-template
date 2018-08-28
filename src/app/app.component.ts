@@ -9,13 +9,8 @@ export class AppComponent implements OnInit {
 
   title = 'DEMO';
   
-
   constructor(  ) {
-      console.log( "AppComponent.constuctor")
-
   }
   ngOnInit() {
   }
-
-  
 }

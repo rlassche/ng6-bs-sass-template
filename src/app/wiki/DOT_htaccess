@@ -1,0 +1,17 @@
+# Place this file in the mediawiki scriptpath directory  (/w)
+# Enable CORS in /mediawiki
+#
+RewriteEngine on
+RewriteBase /w
+
+# With http connection, allow only from localhost and local network.
+<If "%{HTTPS} == 'off'">
+RewriteRule ^(.*)$ /mediawiki/index.php?title=$1 [PT,L,QSA]
+Require ip 127.0.0.1
+Require ip 127.0.1.1
+Require ip 192.168.0.0/16
+</If>
+<Else>
+# With https, allow all and RENDER the wiki page
+RewriteRule ^(.*)$ /mediawiki/index.php?title=$1&action=render [PT,L,QSA]
+</Else>

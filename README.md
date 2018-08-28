@@ -9,6 +9,8 @@ See demo `ngx-bootstrap`
 
 See demo `wiki`
 
+[wiki README.md](https://github.com/rlassche/ng6-bs-sass-template/blob/master/src/app/wiki/README.md)
+
 ## Configuring the demo
 * Wiki
 

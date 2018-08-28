@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Observable, Subject } from 'rxjs';
 import { HttpClient, HttpErrorResponse, HttpParams } from '@angular/common/http';
+import { WGARTICLEPATH } from './wiki_config'
 //
 // Subscribe and send new messages
 //
@@ -22,7 +23,7 @@ export class WikiService {
     return this.subject.asObservable();
   }
   renderWikiArticle( article:string) {
-    return this.http.get( "https://hp-probook/w/" + article, { responseType: 'text'})
+    return this.http.get( WGARTICLEPATH + article, { responseType: 'text'})
 
 }
 }

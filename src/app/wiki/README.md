@@ -1,4 +1,6 @@
-# Angular 6 - Mediawiki module
+# Angular 7 - Mediawiki module
+The project was created with angular-6, but is upgraded to version 7.
+
 # Requirements
 
 ## Mediawik

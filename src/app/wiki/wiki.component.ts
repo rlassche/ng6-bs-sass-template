@@ -20,6 +20,7 @@ export class WikiComponent implements OnInit, OnDestroy {
   @Input( 'debug' )
   debug:boolean = true;
 
+  theWikiPage = ''
   renderedArticle:string = ''
   message: any;
   subscription: Subscription;
